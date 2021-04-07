@@ -3,6 +3,7 @@ import './App.css';
 import SignIn from './Components/Profile/SignIn';
 import SignUp from './Components/Profile/SignUp';
 import './Components/UploadFile';
+import SinglePage from './Components/SinglePage/SinglePage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,9 +18,10 @@ class App extends Component {
     return (
       <Router className="container">
         <Switch>
-          <Route exact path="/" component={SignIn} />
+          {/* <Route exact path="/" component={SignIn} />
           <Route exact path="/SignUp" component={SignUp} />
-          <Route exact path='/uploadfile' component={UploadFile}/>
+          <Route exact path='/uploadfile' component={UploadFile} /> */}
+          <Route exact path='/' component={SinglePage}/>
         </Switch>
       </Router>
     );
