@@ -27,9 +27,9 @@ const Service = () => {
   
     const handleUpload = async (file) => {
         Swal.fire("File uploaded");
-          uploadFile(file, config)
-              .then(data => console.log(data))
-              .catch(err => console.error(err))
+        //   uploadFile(file, config)
+        //       .then(data => console.log(data))
+        //       .catch(err => console.error(err))
       }
     return (
         <ServicesContainer id="service">
